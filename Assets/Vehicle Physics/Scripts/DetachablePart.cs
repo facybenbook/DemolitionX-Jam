@@ -16,13 +16,15 @@ public class DetachablePart : MonoBehaviour
 
     //[System.NonSerialized]
     //public HingeJoint hinge;
-    [System.NonSerialized]
-    public bool detached;
+    [System.NonSerialized] public bool detached;
+
     //[System.NonSerialized]
     //public Vector3 initialPos;
     public float mass = 0.1f;
     public float drag;
+
     public float angularDrag = 0.05f;
+
     //public float looseForce = -1;
     public float breakForce = 25;
 
@@ -34,7 +36,7 @@ public class DetachablePart : MonoBehaviour
 
     void Update()
     {
-        if(detached)
+        if (detached)
         {
             Destroy(gameObject, 10f);
         }

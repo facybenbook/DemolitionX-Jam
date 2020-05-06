@@ -9,9 +9,10 @@ public class Ping : NetworkBehaviour
 {
     public Text pingText;
     public static float ping;
-    [SyncVar]
-    public float lastms;
+    [SyncVar] public float lastms;
+
     public Stopwatch stopwatch = new Stopwatch();
+
     // Update is called once per frame
     public void Start()
     {
@@ -26,6 +27,7 @@ public class Ping : NetworkBehaviour
             lastms = stopwatch.ElapsedMilliseconds;
             RpcRecivePacket();
         }
+
         pingText.text = "Ping : " + ping + "ms";
     }
 
