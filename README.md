@@ -14,4 +14,4 @@ Contributors
 
     @MV Nihal Narayan Rao#2399
 
-Discord link: https://discord.gg/aYufX7
+Discord link: https://discord.gg/EZndaCb
